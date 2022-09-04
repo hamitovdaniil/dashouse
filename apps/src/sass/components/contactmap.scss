@@ -1,0 +1,63 @@
+.contactmap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    &_map{
+        margin: 0;
+        width: 60%;
+        @include media(1200){
+            width: 100%;
+        }
+    }
+    &_content{
+        width: 40%;
+        background: #EBBC00;
+        max-height: 592px;
+        padding-top: 90px;
+        padding-left: 125px;
+        @include media(1200){
+            width: 100%;
+            max-width: 1200px;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        @include media(768){
+            padding: 50px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-num{
+            display: flex;
+            flex-direction: column;
+            h3{
+                margin-bottom: 24px;
+            }
+            margin-bottom: 50px;
+        }
+        &-mail{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+    }
+}
+.conh3{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    color: #ffffff;
+}
+.conp{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    color: #ffffff;
+}
+.pad{
+    margin: 12px 0 12px;
+}
+.addres{
+    margin-top: 24px;
+}

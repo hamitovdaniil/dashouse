@@ -1,0 +1,93 @@
+.bazVata{
+    transform: translateY(-25px);
+    width: 100%;
+    display: flex;
+    &__content{
+        margin: 0 auto;
+        width: 1140px;
+        display: flex;
+        flex-direction: column;
+        gap: 85px;
+        h3{
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 42px;
+            color: #ffffff;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+.bazVataitems{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    &-center{
+        width: 100%;
+        max-width: 1574px;
+        margin: 0 auto;
+        display: flex;
+        padding: 0 10px;
+        @include media(1300){
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 20px;
+        }
+        &__item{
+            display: flex;
+            align-items: center;
+            gap: 29px;
+            margin: 0;
+            &_text{
+                display: flex;
+                flex-direction: column;
+                gap: 27px;
+                p{
+                    max-width: 202px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 29px;
+                    color: #ffffff;
+                }
+                a{
+                    max-width: 202px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 23px;
+                    color: rgba(235, 188, 0, 0.5);
+                }
+            }
+            img{
+                max-width: 149px;
+                width: 100%;
+            }
+        }
+    }
+}
+.headrdrug{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textProduct{
+    width: 100%;
+    &_center{
+        margin: 0 auto;
+        max-width: 1140px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 29px;
+        color: #ffffff;
+        opacity: 0.5;
+        padding: 20px;
+        @include media(540){
+            text-align: center;
+        }
+    }
+}

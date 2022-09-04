@@ -1,0 +1,107 @@
+.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    &-items{
+        width: 100%;
+        max-width: 1145px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        @include media(992){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__contact{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            gap: 18px;
+            @include media(992){
+                flex-direction: row;
+                margin-top: 50px;
+                order: 1;
+            }
+            @include media(768){
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            a{
+                color: #ffffff;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        &__form{
+            max-width: 764px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: end;
+            gap: 13px;
+            @include media(992){
+                order: -1;
+                justify-content: center;
+            }
+            @include media(768){
+                flex-direction: column;
+            }
+            .inputs{
+                max-width: 505px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 13px;
+                @include media(992){
+                    max-width: 415px;
+                }
+            }
+            input{
+                width: 50%;
+                max-width: 246px;
+                height: 57px;
+                color: #ffffff;
+                border-radius: 10px;
+                background: #3C3C3C;
+                padding: 20px 0 20px 20px;
+                border: none;
+                text-rendering: none;
+                @include media(992){
+                    max-width: 200px;
+                }
+                @include media(768){
+                    width: 100%;
+                }
+            }
+            input::placeholder{
+                color: #ffffff;
+            }
+            textarea{
+                padding: 20px 126px 87px 20px;
+                max-width: 246px;
+                width: 100%;
+                height: 127px;
+                border-radius: 10px;
+                color: #ffffff;
+                background: #3C3C3C;
+                border: none;
+            }
+            button{
+                padding: 11px 40px;
+                width: 200px;
+                height: 52px;
+                border-radius: 200px;
+                color: #ffffff;
+                background: #EBBC00;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
